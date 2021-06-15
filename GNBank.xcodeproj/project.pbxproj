@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		950AE4AC25FBA3550010BA5F /* load.gif in Resources */ = {isa = PBXBuildFile; fileRef = 950AE4AB25FBA3550010BA5F /* load.gif */; };
+		950AE4AF25FBAA9F0010BA5F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AE4AE25FBAA9F0010BA5F /* Protocols.swift */; };
+		950AE4B325FBAD190010BA5F /* ProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AE4B225FBAD190010BA5F /* ProductsDataSource.swift */; };
+		950AE4B725FBAD340010BA5F /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950AE4B625FBAD340010BA5F /* ProductModel.swift */; };
+		955A241F25FB6949008CA08C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 955A241D25FB6949008CA08C /* Podfile */; };
+		955A242025FB6949008CA08C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 955A241E25FB6949008CA08C /* README.md */; };
+		955A242E25FB6CF6008CA08C /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A242C25FB6CF6008CA08C /* ProductsViewController.swift */; };
+		955A242F25FB6CF6008CA08C /* ProductsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955A242D25FB6CF6008CA08C /* ProductsViewController.xib */; };
+		955A243525FB71A2008CA08C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A243425FB71A2008CA08C /* Utils.swift */; };
+		955A243825FB735F008CA08C /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A243725FB735F008CA08C /* LoadView.swift */; };
+		955A243C25FB7384008CA08C /* LoadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955A243B25FB7384008CA08C /* LoadView.xib */; };
+		955A243F25FB759C008CA08C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955A243E25FB759C008CA08C /* Extensions.swift */; };
+		957685C525FD347A00C2277C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957685C425FD347A00C2277C /* ErrorView.swift */; };
+		957685CC25FD359000C2277C /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 957685CB25FD359000C2277C /* ErrorView.xib */; };
+		957685D025FD398900C2277C /* ProductsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957685CF25FD398900C2277C /* ProductsTableView.swift */; };
+		957685D325FD399C00C2277C /* ProductsTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 957685D225FD399C00C2277C /* ProductsTableView.xib */; };
+		957685DE25FD3C2400C2277C /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957685DC25FD3C2400C2277C /* ProductTableViewCell.swift */; };
+		957685DF25FD3C2400C2277C /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 957685DD25FD3C2400C2277C /* ProductTableViewCell.xib */; };
+		957685E225FD3F4900C2277C /* ConversionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957685E125FD3F4900C2277C /* ConversionsDataSource.swift */; };
+		957685E525FD3F6E00C2277C /* ConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957685E425FD3F6E00C2277C /* ConversionModel.swift */; };
+		957685E825FD416400C2277C /* ConversionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957685E725FD416400C2277C /* ConversionListViewModel.swift */; };
+		957685F025FD420C00C2277C /* ConversionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957685EF25FD420C00C2277C /* ConversionViewModel.swift */; };
+		9583A33D25FE3205001CEA8A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9583A33C25FE3205001CEA8A /* Currency.swift */; };
+		9583A34F25FE6F2B001CEA8A /* DetailProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9583A34D25FE6F2B001CEA8A /* DetailProductViewController.swift */; };
+		9583A35025FE6F2B001CEA8A /* DetailProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9583A34E25FE6F2B001CEA8A /* DetailProductViewController.xib */; };
+		9583A35825FE72BA001CEA8A /* AmountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9583A35625FE72BA001CEA8A /* AmountTableViewCell.swift */; };
+		9583A35925FE72BA001CEA8A /* AmountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9583A35725FE72BA001CEA8A /* AmountTableViewCell.xib */; };
+		9587349A25FCCFB900AF013A /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9587349925FCCFB900AF013A /* ProductListViewModel.swift */; };
+		9587349D25FCD10C00AF013A /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9587349C25FCD10C00AF013A /* ProductViewModel.swift */; };
+		958734A125FCD1E200AF013A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958734A025FCD1E200AF013A /* Constants.swift */; };
+		95DC619925FB674100D5BC65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC619825FB674100D5BC65 /* AppDelegate.swift */; };
+		95DC619B25FB674100D5BC65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC619A25FB674100D5BC65 /* SceneDelegate.swift */; };
+		95DC619D25FB674100D5BC65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC619C25FB674100D5BC65 /* ViewController.swift */; };
+		95DC61A025FB674100D5BC65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DC619E25FB674100D5BC65 /* Main.storyboard */; };
+		95DC61A225FB674100D5BC65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DC61A125FB674100D5BC65 /* Assets.xcassets */; };
+		95DC61A525FB674100D5BC65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DC61A325FB674100D5BC65 /* LaunchScreen.storyboard */; };
+		D843EF86F6E33C6609808B31 /* Pods_GNBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B42CB35E3892B07D9B00FD7 /* Pods_GNBank.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35B58DFC9423C61FC9D17BAE /* Pods-GNBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBank.release.xcconfig"; path = "Target Support Files/Pods-GNBank/Pods-GNBank.release.xcconfig"; sourceTree = "<group>"; };
+		4B42CB35E3892B07D9B00FD7 /* Pods_GNBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		950AE4AB25FBA3550010BA5F /* load.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = load.gif; sourceTree = "<group>"; };
+		950AE4AE25FBAA9F0010BA5F /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		950AE4B225FBAD190010BA5F /* ProductsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataSource.swift; sourceTree = "<group>"; };
+		950AE4B625FBAD340010BA5F /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		955A241D25FB6949008CA08C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		955A241E25FB6949008CA08C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		955A242C25FB6CF6008CA08C /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		955A242D25FB6CF6008CA08C /* ProductsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsViewController.xib; sourceTree = "<group>"; };
+		955A243425FB71A2008CA08C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		955A243725FB735F008CA08C /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
+		955A243B25FB7384008CA08C /* LoadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadView.xib; sourceTree = "<group>"; };
+		955A243E25FB759C008CA08C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		957685C425FD347A00C2277C /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		957685CB25FD359000C2277C /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		957685CF25FD398900C2277C /* ProductsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableView.swift; sourceTree = "<group>"; };
+		957685D225FD399C00C2277C /* ProductsTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsTableView.xib; sourceTree = "<group>"; };
+		957685DC25FD3C2400C2277C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		957685DD25FD3C2400C2277C /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		957685E125FD3F4900C2277C /* ConversionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionsDataSource.swift; sourceTree = "<group>"; };
+		957685E425FD3F6E00C2277C /* ConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionModel.swift; sourceTree = "<group>"; };
+		957685E725FD416400C2277C /* ConversionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionListViewModel.swift; sourceTree = "<group>"; };
+		957685EF25FD420C00C2277C /* ConversionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewModel.swift; sourceTree = "<group>"; };
+		9583A33C25FE3205001CEA8A /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		9583A34D25FE6F2B001CEA8A /* DetailProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductViewController.swift; sourceTree = "<group>"; };
+		9583A34E25FE6F2B001CEA8A /* DetailProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailProductViewController.xib; sourceTree = "<group>"; };
+		9583A35625FE72BA001CEA8A /* AmountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountTableViewCell.swift; sourceTree = "<group>"; };
+		9583A35725FE72BA001CEA8A /* AmountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountTableViewCell.xib; sourceTree = "<group>"; };
+		9587349925FCCFB900AF013A /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		9587349C25FCD10C00AF013A /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		958734A025FCD1E200AF013A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		95DC619525FB674100D5BC65 /* GNBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DC619825FB674100D5BC65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		95DC619A25FB674100D5BC65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		95DC619C25FB674100D5BC65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95DC619F25FB674100D5BC65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95DC61A125FB674100D5BC65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95DC61A425FB674100D5BC65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95DC61A625FB674100D5BC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FC93F579746D8DAA4BCD1B /* Pods-GNBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBank.debug.xcconfig"; path = "Target Support Files/Pods-GNBank/Pods-GNBank.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95DC619225FB674100D5BC65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D843EF86F6E33C6609808B31 /* Pods_GNBank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		950AE4B125FBAD040010BA5F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				950AE4B225FBAD190010BA5F /* ProductsDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		955A242625FB69CD008CA08C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				9583A33F25FE6E5A001CEA8A /* DetailProduct */,
+				957685EB25FD419700C2277C /* Conversions */,
+				955A242725FB6BF2008CA08C /* ProductsMVVM */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		955A242725FB6BF2008CA08C /* ProductsMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				955A242A25FB6C08008CA08C /* Controllers */,
+				955A242925FB6C01008CA08C /* ViewModel */,
+				950AE4B125FBAD040010BA5F /* DataSource */,
+				955A242825FB6BFC008CA08C /* Model */,
+			);
+			path = ProductsMVVM;
+			sourceTree = "<group>";
+		};
+		955A242825FB6BFC008CA08C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				950AE4B625FBAD340010BA5F /* ProductModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		955A242925FB6C01008CA08C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9587349925FCCFB900AF013A /* ProductListViewModel.swift */,
+				9587349C25FCD10C00AF013A /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		955A242A25FB6C08008CA08C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				955A242C25FB6CF6008CA08C /* ProductsViewController.swift */,
+				955A242D25FB6CF6008CA08C /* ProductsViewController.xib */,
+				955A243A25FB7364008CA08C /* Views */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		955A243325FB7187008CA08C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				950AE4AB25FBA3550010BA5F /* load.gif */,
+				955A243425FB71A2008CA08C /* Utils.swift */,
+				955A243E25FB759C008CA08C /* Extensions.swift */,
+				950AE4AE25FBAA9F0010BA5F /* Protocols.swift */,
+				958734A025FCD1E200AF013A /* Constants.swift */,
+				9583A33C25FE3205001CEA8A /* Currency.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		955A243A25FB7364008CA08C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				955A243725FB735F008CA08C /* LoadView.swift */,
+				955A243B25FB7384008CA08C /* LoadView.xib */,
+				957685C425FD347A00C2277C /* ErrorView.swift */,
+				957685CB25FD359000C2277C /* ErrorView.xib */,
+				957685CF25FD398900C2277C /* ProductsTableView.swift */,
+				957685D225FD399C00C2277C /* ProductsTableView.xib */,
+				957685DC25FD3C2400C2277C /* ProductTableViewCell.swift */,
+				957685DD25FD3C2400C2277C /* ProductTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		957685EB25FD419700C2277C /* Conversions */ = {
+			isa = PBXGroup;
+			children = (
+				957685EE25FD41B700C2277C /* ViewModel */,
+				957685ED25FD41AD00C2277C /* DataSource */,
+				957685EC25FD41A500C2277C /* Model */,
+			);
+			path = Conversions;
+			sourceTree = "<group>";
+		};
+		957685EC25FD41A500C2277C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				957685E425FD3F6E00C2277C /* ConversionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		957685ED25FD41AD00C2277C /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				957685E125FD3F4900C2277C /* ConversionsDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		957685EE25FD41B700C2277C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				957685E725FD416400C2277C /* ConversionListViewModel.swift */,
+				957685EF25FD420C00C2277C /* ConversionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9583A33F25FE6E5A001CEA8A /* DetailProduct */ = {
+			isa = PBXGroup;
+			children = (
+				9583A34125FE6E7D001CEA8A /* Controllers */,
+			);
+			path = DetailProduct;
+			sourceTree = "<group>";
+		};
+		9583A34125FE6E7D001CEA8A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9583A34D25FE6F2B001CEA8A /* DetailProductViewController.swift */,
+				9583A34E25FE6F2B001CEA8A /* DetailProductViewController.xib */,
+				9583A35625FE72BA001CEA8A /* AmountTableViewCell.swift */,
+				9583A35725FE72BA001CEA8A /* AmountTableViewCell.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		95DC618C25FB674100D5BC65 = {
+			isa = PBXGroup;
+			children = (
+				955A241E25FB6949008CA08C /* README.md */,
+				955A241D25FB6949008CA08C /* Podfile */,
+				95DC619725FB674100D5BC65 /* GNBank */,
+				95DC619625FB674100D5BC65 /* Products */,
+				ECB0BBDD5AD430494BCC61A7 /* Pods */,
+				96533577CA3D3983A06628D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95DC619625FB674100D5BC65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95DC619525FB674100D5BC65 /* GNBank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95DC619725FB674100D5BC65 /* GNBank */ = {
+			isa = PBXGroup;
+			children = (
+				955A242625FB69CD008CA08C /* Features */,
+				955A243325FB7187008CA08C /* Utils */,
+				95DC619825FB674100D5BC65 /* AppDelegate.swift */,
+				95DC619A25FB674100D5BC65 /* SceneDelegate.swift */,
+				95DC619C25FB674100D5BC65 /* ViewController.swift */,
+				95DC619E25FB674100D5BC65 /* Main.storyboard */,
+				95DC61A125FB674100D5BC65 /* Assets.xcassets */,
+				95DC61A325FB674100D5BC65 /* LaunchScreen.storyboard */,
+				95DC61A625FB674100D5BC65 /* Info.plist */,
+			);
+			path = GNBank;
+			sourceTree = "<group>";
+		};
+		96533577CA3D3983A06628D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B42CB35E3892B07D9B00FD7 /* Pods_GNBank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECB0BBDD5AD430494BCC61A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5FC93F579746D8DAA4BCD1B /* Pods-GNBank.debug.xcconfig */,
+				35B58DFC9423C61FC9D17BAE /* Pods-GNBank.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95DC619425FB674100D5BC65 /* GNBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95DC61A925FB674100D5BC65 /* Build configuration list for PBXNativeTarget "GNBank" */;
+			buildPhases = (
+				711B26DAA4D3BCB7CB5D9178 /* [CP] Check Pods Manifest.lock */,
+				95DC619125FB674100D5BC65 /* Sources */,
+				95DC619225FB674100D5BC65 /* Frameworks */,
+				95DC619325FB674100D5BC65 /* Resources */,
+				5E1FE2CB3D438C64D78CD45E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNBank;
+			productName = GNBank;
+			productReference = 95DC619525FB674100D5BC65 /* GNBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95DC618D25FB674100D5BC65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					95DC619425FB674100D5BC65 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 95DC619025FB674100D5BC65 /* Build configuration list for PBXProject "GNBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95DC618C25FB674100D5BC65;
+			productRefGroup = 95DC619625FB674100D5BC65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95DC619425FB674100D5BC65 /* GNBank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95DC619325FB674100D5BC65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				957685DF25FD3C2400C2277C /* ProductTableViewCell.xib in Resources */,
+				95DC61A525FB674100D5BC65 /* LaunchScreen.storyboard in Resources */,
+				95DC61A225FB674100D5BC65 /* Assets.xcassets in Resources */,
+				9583A35025FE6F2B001CEA8A /* DetailProductViewController.xib in Resources */,
+				955A243C25FB7384008CA08C /* LoadView.xib in Resources */,
+				955A242F25FB6CF6008CA08C /* ProductsViewController.xib in Resources */,
+				950AE4AC25FBA3550010BA5F /* load.gif in Resources */,
+				955A242025FB6949008CA08C /* README.md in Resources */,
+				957685CC25FD359000C2277C /* ErrorView.xib in Resources */,
+				955A241F25FB6949008CA08C /* Podfile in Resources */,
+				95DC61A025FB674100D5BC65 /* Main.storyboard in Resources */,
+				9583A35925FE72BA001CEA8A /* AmountTableViewCell.xib in Resources */,
+				957685D325FD399C00C2277C /* ProductsTableView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E1FE2CB3D438C64D78CD45E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNBank/Pods-GNBank-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNBank/Pods-GNBank-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNBank/Pods-GNBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		711B26DAA4D3BCB7CB5D9178 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95DC619125FB674100D5BC65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955A243825FB735F008CA08C /* LoadView.swift in Sources */,
+				9587349A25FCCFB900AF013A /* ProductListViewModel.swift in Sources */,
+				957685F025FD420C00C2277C /* ConversionViewModel.swift in Sources */,
+				9587349D25FCD10C00AF013A /* ProductViewModel.swift in Sources */,
+				950AE4B725FBAD340010BA5F /* ProductModel.swift in Sources */,
+				955A243525FB71A2008CA08C /* Utils.swift in Sources */,
+				950AE4B325FBAD190010BA5F /* ProductsDataSource.swift in Sources */,
+				95DC619D25FB674100D5BC65 /* ViewController.swift in Sources */,
+				958734A125FCD1E200AF013A /* Constants.swift in Sources */,
+				9583A34F25FE6F2B001CEA8A /* DetailProductViewController.swift in Sources */,
+				957685E225FD3F4900C2277C /* ConversionsDataSource.swift in Sources */,
+				95DC619925FB674100D5BC65 /* AppDelegate.swift in Sources */,
+				957685DE25FD3C2400C2277C /* ProductTableViewCell.swift in Sources */,
+				9583A33D25FE3205001CEA8A /* Currency.swift in Sources */,
+				9583A35825FE72BA001CEA8A /* AmountTableViewCell.swift in Sources */,
+				955A242E25FB6CF6008CA08C /* ProductsViewController.swift in Sources */,
+				95DC619B25FB674100D5BC65 /* SceneDelegate.swift in Sources */,
+				957685E525FD3F6E00C2277C /* ConversionModel.swift in Sources */,
+				957685D025FD398900C2277C /* ProductsTableView.swift in Sources */,
+				957685C525FD347A00C2277C /* ErrorView.swift in Sources */,
+				955A243F25FB759C008CA08C /* Extensions.swift in Sources */,
+				957685E825FD416400C2277C /* ConversionListViewModel.swift in Sources */,
+				950AE4AF25FBAA9F0010BA5F /* Protocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95DC619E25FB674100D5BC65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DC619F25FB674100D5BC65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95DC61A325FB674100D5BC65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95DC61A425FB674100D5BC65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95DC61A725FB674100D5BC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95DC61A825FB674100D5BC65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95DC61AA25FB674100D5BC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5FC93F579746D8DAA4BCD1B /* Pods-GNBank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8RE4AKSD2;
+				INFOPLIST_FILE = GNBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = n2dev.GNBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95DC61AB25FB674100D5BC65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B58DFC9423C61FC9D17BAE /* Pods-GNBank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8RE4AKSD2;
+				INFOPLIST_FILE = GNBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = n2dev.GNBank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95DC619025FB674100D5BC65 /* Build configuration list for PBXProject "GNBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DC61A725FB674100D5BC65 /* Debug */,
+				95DC61A825FB674100D5BC65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95DC61A925FB674100D5BC65 /* Build configuration list for PBXNativeTarget "GNBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95DC61AA25FB674100D5BC65 /* Debug */,
+				95DC61AB25FB674100D5BC65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95DC618D25FB674100D5BC65 /* Project object */;
+}
